@@ -1,5 +1,3 @@
 # Idalina Sachango
 
-|![data-selfie.jpg](./data-selfie.jpg)| 
-|:--:| 
-| *Data Selfie* |
+![data-selfie.jpg](./data-selfie.jpg)
