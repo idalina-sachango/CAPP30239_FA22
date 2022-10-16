@@ -1,3 +1,5 @@
+# CAPP30239_FA22 Project 1 Data: Panel Study of Income Dynamics
+
 1. Data source: Panel Study of Income Dyanmics, UMich, Michigan, (https://psidonline.isr.umich.edu/default.aspx)
 
 2. Description of data: Long running longitudinal survey that includes data from immigrant sample populations arriving in 1968 and low-income sample populations.
