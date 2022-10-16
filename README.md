@@ -1,6 +1,6 @@
 layout: page
 title: "Welcome to Data Viz!"
-permalink: https://idalina-sachango.github.io
+permalink: https://idalina-sachango.github.io/about
 
 # CAPP30239_FA22
 
