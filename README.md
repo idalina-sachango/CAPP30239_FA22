@@ -6,9 +6,11 @@ This is a repository for CAPP class on data visualization for policy analysis. T
 
 Week 1:
 - Introduction and Data Selfie
+
 Week 2:
 - HTML
 - Javascript
+
 Week 3:
 - Data for Final Project
 - Visualizing with D3.js
