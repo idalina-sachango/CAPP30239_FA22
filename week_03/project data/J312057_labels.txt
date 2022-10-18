@@ -1,0 +1,64 @@
+****** PSID DATA CENTER ************************* 
+****** Variable labels for JobID = 312057 ******* 
+
+Variable    Labels
+
+ER30000    RELEASE NUMBER                          
+ER30001    1968 INTERVIEW NUMBER                   
+ER30002    PERSON NUMBER                         68
+ER33601    2001 INTERVIEW NUMBER                   
+ER33602    SEQUENCE NUMBER                       01
+ER33603    RELATION TO HEAD                      01
+ER33606    YEAR INDIVIDUAL BORN                  01
+ER33612    EMPLOYMENT STATUS                     01
+ER33701    2003 INTERVIEW NUMBER                   
+ER33702    SEQUENCE NUMBER                       03
+ER33703    RELATION TO HEAD                      03
+ER33706    YEAR INDIVIDUAL BORN                  03
+ER33712    EMPLOYMENT STATUS                     03
+ER33801    2005 INTERVIEW NUMBER                   
+ER33802    SEQUENCE NUMBER                       05
+ER33803    RELATION TO HEAD                      05
+ER33806    YEAR INDIVIDUAL BORN                  05
+ER33901    2007 INTERVIEW NUMBER                   
+ER33902    SEQUENCE NUMBER                       07
+ER33903    RELATION TO HEAD                      07
+ER33906    YEAR INDIVIDUAL BORN                  07
+ER33913    EMPLOYMENT STATUS                     07
+ER34001    2009 INTERVIEW NUMBER                   
+ER34002    SEQUENCE NUMBER                       09
+ER34003    RELATION TO HEAD                      09
+ER34004    AGE OF INDIVIDUAL                     09
+ER34006    YEAR INDIVIDUAL BORN                  09
+ER34016    EMPLOYMENT STATUS                     09
+ER34101    2011 INTERVIEW NUMBER                   
+ER34102    SEQUENCE NUMBER                       11
+ER34103    RELATION TO HEAD                      11
+ER34104    AGE OF INDIVIDUAL                     11
+ER34106    YEAR INDIVIDUAL BORN                  11
+ER34116    EMPLOYMENT STATUS                     11
+ER34201    2013 INTERVIEW NUMBER                   
+ER34202    SEQUENCE NUMBER                       13
+ER34203    RELATION TO HEAD                      13
+ER34204    AGE OF INDIVIDUAL                     13
+ER34206    YEAR INDIVIDUAL BORN                  13
+ER34216    EMPLOYMENT STATUS                     13
+ER34224    BACHELOR DEGREE MAJOR                 13
+ER34301    2015 INTERVIEW NUMBER                   
+ER34302    SEQUENCE NUMBER                       15
+ER34303    RELATION TO HEAD                      15
+ER34305    AGE OF INDIVIDUAL                     15
+ER34307    YEAR INDIVIDUAL BORN                  15
+ER34317    EMPLOYMENT STATUS                     15
+ER34501    2017 INTERVIEW NUMBER                   
+ER34502    SEQUENCE NUMBER                       17
+ER34503    RELATION TO REFERENCE PERSON          17
+ER34504    AGE OF INDIVIDUAL                     17
+ER34506    YEAR INDIVIDUAL BORN                  17
+ER34516    EMPLOYMENT STATUS                     17
+ER34517    YEAR HIGHEST EDUCATION UPDATED        17
+ER34701    2019 INTERVIEW NUMBER                   
+ER34702    SEQUENCE NUMBER                       19
+ER34703    RELATION TO REFERENCE PERSON          19
+
+*** End of labels ******************************* 
