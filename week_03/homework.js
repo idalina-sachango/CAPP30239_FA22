@@ -1,13 +1,13 @@
 /* Bar chart for COVID country cases */
 
-d3.csv("covid.csv").then(data => {
+d3.csv("library_visits.csv").then(data => {
 
     for (let d of data) {
-        d.vaccination = +d.vaccination; //force a number
+        d.num = +d.num; //force a number
     };
 
     // sort alphabetically
-    data.sort((a, b) => d3.ascending(a.country, b.country));
+    data.sort((a, b) => d3.ascending(a.branch, b.branch));
 
     const height = 600,
           width = 800,
@@ -18,12 +18,12 @@ d3.csv("covid.csv").then(data => {
         .attr("viewBox", [0, 0, width, height]); // for resizing element in browser
     
     let x = d3.scaleBand()
-        .domain(data.map(d => d.country)) // data, returns array
+        .domain(data.map(d => d.branch)) // data, returns array
         .range([margin.left, width - margin.right]) // pixels on page
         .padding(0.1);
     
     let y = d3.scaleLinear()
-        .domain([0, d3.max(data, d => d.vaccination)]).nice() // nice rounds the top num
+        .domain([0, d3.max(data, d => d.num)]).nice() // nice rounds the top num
         .range([height - margin.bottom, margin.top]); //svgs are built from top down, so this is reversed
     
     /* Update: simplfied axes */
@@ -43,15 +43,15 @@ d3.csv("covid.csv").then(data => {
 
     bar.append("rect") // add rect to bar group
         .attr("fill", "pink")
-        .attr("x", d => x(d.country)) // x position attribute
+        .attr("x", d => x(d.branch)) // x position attribute
         .attr("width", x.bandwidth()) // this width is the width attr on the element
-        .attr("y", d => y(d.vaccination)) // y position attribute
-        .attr("height", d => y(0) - y(d.vaccination)); // this height is the height attr on element
+        .attr("y", d => y(d.num)) // y position attribute
+        .attr("height", d => y(0) - y(d.num)); // this height is the height attr on element
     
     bar.append('text') // add labels
-        .text(d => d.vaccination)
-        .attr('x', d => x(d.country) + (x.bandwidth()/2))
-        .attr('y', d => y(d.vaccination) + 13)
+        .text(d => d.num)
+        .attr('x', d => x(d.branch) + (x.bandwidth()/2))
+        .attr('y', d => y(d.num) + 13)
         .attr('text-anchor', 'middle')
         .style('fill', 'white');
 
