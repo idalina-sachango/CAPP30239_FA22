@@ -5,33 +5,47 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Histogram</title>
+  <title>Police Killings</title>
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <div id="container">
-    <p>
+    <div class="container">
         <h1>Police Killings by Race by Month</h1>
-        <p></p>
-        <div id="chart1"></div>
-    </p>
+        <p>
+            I chose a line chart because I wanted to understand if there was a trend over specific time frames for some of
+            these acts of violence. I decided to plot it by race  over a years span where teh x-axis represents months.
+            I would have liked to re-weight the data, since it's likely that white individuals may be over represented here.
 
-    <p>
-        <h1>Police Killings by Manner of Death and Race</h1>
-        <p></p>
-        <div id="chart2"></div>
-    </p>
+        </p>
+        <div id="chart1" class="line"></div>
+        <br><br>
+    </div>
 
-    <p>
+    <div class="container">
         <h1>Police Killings by Mental Illness</h1>
-        <p></p>
+        <p>
+            Again, I wanted this visualization to be mental illness by race. I thought this was an interesting indicator.
+            I hadn't previously interacted with a dataset linking mental illness to police violence. So it was interesting to see the levels 
+            regardless of the stratification by race. 
+            
+        </p>
         <div id="chart3"></div>
-    </p>
+        <br><br>
+        <br><br>
+    </div>
 
-    
-  </div>
+    <div class="container">
+        <h1>Police Killings by Manner of Death and Race</h1>
+        <p>
+            I initally wanted to do these following charts as a grouped bar chart, but I could not get my code to work in time. 
+            I wanted to see what the distribution looked like and if there was any pattern in how certain racial groups died. 
+            If the visualization turned out how I wanted it to, I would have had manner of death grouped by race. 
+            
+        </p>
+        <div id="chart2"></div>
+    </div>
 </body>
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="homework.js"></script>
