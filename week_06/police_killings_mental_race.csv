@@ -1,0 +1,13 @@
+Mental_illness,Race,total
+FALSE,Asian,12
+FALSE,Black,325
+FALSE,Hispanic,197
+FALSE,Native,15
+FALSE,Other,9
+FALSE,White,563
+TRUE,Asian,4
+TRUE,Black,52
+TRUE,Hispanic,48
+TRUE,Native,4
+TRUE,Other,1
+TRUE,White,186
