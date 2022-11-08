@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiline visualization</title>
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    a { color: #369;}
+
+    svg { width: 100%; }
+
+    text {
+      font-size: 10px;
+      text-transform: uppercase;
+    }
+
+    path.domain { display: none; }
+
+    line {
+      stroke: #eee;
+      stroke-dasharray: 1px;
+    }
+
+    .race { cursor: default; }
+    
+    .race path {
+      stroke-width: 1.5;
+      opacity: 0.75;
+    }
+
+    .highlight path {
+      stroke: steelblue;
+      opacity: 1;
+    }
+
+    .highlight text { fill: steelblue; }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <h1>Police Killings by Race</h1>
+    <p>
+      Police killings by race by month.
+    </p> 
+  </div>
+</body>
+<div id="chart"></div>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="police_killings_multiline.js"></script>
+
+</html>
