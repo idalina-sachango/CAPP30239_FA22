@@ -1,0 +1,388 @@
+,Unnamed: 0,playlist_name,variable,value
+354,354,Música do antigamente,valence,0.9275
+346,346,Angola 70's,valence,0.75422
+352,352,Lina's spanish songs,valence,0.65
+365,365,dance,valence,0.63536
+382,382,summer2019,valence,0.6146363636363636
+385,385,wedding playlist 2,valence,0.6128
+362,362,a love letter to little me,valence,0.6124583333333333
+372,372,for dancing,valence,0.5696666666666667
+353,353,Litty,valence,0.5660951219512196
+380,380,spring break,valence,0.56556
+366,366,disney!!!!!!!!!!!!!,valence,0.52334
+374,374,lil's recs,valence,0.5184285714285715
+376,376,right now,valence,0.5162727272727273
+383,383,that new new country,valence,0.4917222222222221
+370,370,feb '20,valence,0.4911875
+345,345,ATL w/Melissa,valence,0.483
+364,364,currents,valence,0.4824
+356,356,Re-education: Bob Dylan,valence,0.482
+350,350,Current Plane Playlist,valence,0.47615
+377,377,road to atl,valence,0.47106
+373,373,jan '20,valence,0.4616363636363637
+358,358,To listen to 8/2,valence,0.4442777777777777
+369,369,fearless,valence,0.427695652173913
+363,363,coming of age online,valence,0.42204
+368,368,"dont worry, you're doing just fine",valence,0.41975
+367,367,doin' the naughty,valence,0.386275
+375,375,march to aug '20,valence,0.3777714285714286
+378,378,sing me to sleep,valence,0.3543333333333333
+351,351,Introducing:,valence,0.3426666666666667
+360,360,You are safe,valence,0.3423333333333333
+344,344,4/12/2019,valence,0.3377083333333333
+371,371,florence,valence,0.3269866666666666
+386,386,when you realize you’re both in love,valence,0.27375
+347,347,Apt. 435,valence,0.27035
+361,361,Your Top Songs 2017,valence,0.243458
+384,384,"through the deep, dark valley",valence,0.2408888888888889
+381,381,summer2018,valence,0.2276375
+349,349,"Christmas Collection, Vol. 1",valence,0.2198461538461538
+355,355,PRAISE,valence,0.210196
+348,348,Atlas: II,valence,0.210055
+359,359,Worship,valence,0.202868
+379,379,sleeping at last,valence,0.1600823529411764
+357,357,Roo Panes,valence,0.1572
+301,301,4/12/2019,time_signature,1.0
+302,302,ATL w/Melissa,time_signature,1.0
+304,304,Apt. 435,time_signature,1.0
+307,307,Current Plane Playlist,time_signature,1.0
+311,311,Música do antigamente,time_signature,1.0
+314,314,Roo Panes,time_signature,1.0
+315,315,To listen to 8/2,time_signature,1.0
+317,317,You are safe,time_signature,1.0
+324,324,doin' the naughty,time_signature,1.0
+326,326,fearless,time_signature,1.0
+332,332,march to aug '20,time_signature,1.0
+342,342,wedding playlist 2,time_signature,1.0
+310,310,Litty,time_signature,0.9682926829268288
+309,309,Lina's spanish songs,time_signature,0.9666666666666668
+322,322,dance,time_signature,0.9479999999999996
+319,319,a love letter to little me,time_signature,0.9458333333333336
+337,337,spring break,time_signature,0.9219999999999996
+329,329,for dancing,time_signature,0.8999999999999995
+303,303,Angola 70's,time_signature,0.8959999999999999
+334,334,road to atl,time_signature,0.8959999999999999
+339,339,summer2019,time_signature,0.8818181818181818
+340,340,that new new country,time_signature,0.8555555555555552
+336,336,sleeping at last,time_signature,0.8470588235294114
+325,325,"dont worry, you're doing just fine",time_signature,0.8375000000000004
+338,338,summer2018,time_signature,0.8375000000000004
+313,313,Re-education: Bob Dylan,time_signature,0.7947368421052632
+320,320,coming of age online,time_signature,0.7919999999999998
+318,318,Your Top Songs 2017,time_signature,0.766
+330,330,jan '20,time_signature,0.7636363636363637
+327,327,feb '20,time_signature,0.7562499999999996
+312,312,PRAISE,time_signature,0.7139999999999995
+343,343,when you realize you’re both in love,time_signature,0.6749999999999998
+333,333,right now,time_signature,0.6454545454545455
+316,316,Worship,time_signature,0.6360000000000001
+323,323,disney!!!!!!!!!!!!!,time_signature,0.5840000000000005
+308,308,Introducing:,time_signature,0.5666666666666664
+328,328,florence,time_signature,0.5666666666666664
+335,335,sing me to sleep,time_signature,0.5666666666666664
+305,305,Atlas: II,time_signature,0.5449999999999999
+321,321,currents,time_signature,0.4800000000000004
+341,341,"through the deep, dark valley",time_signature,0.4222222222222216
+331,331,lil's recs,time_signature,0.0714285714285711
+306,306,"Christmas Collection, Vol. 1",time_signature,0.0
+267,267,Litty,speechiness,0.1834024390243902
+268,268,Música do antigamente,speechiness,0.17235
+279,279,dance,speechiness,0.14037
+272,272,To listen to 8/2,speechiness,0.1315888888888888
+284,284,feb '20,speechiness,0.10299375
+280,280,disney!!!!!!!!!!!!!,speechiness,0.096008
+288,288,lil's recs,speechiness,0.0899285714285714
+290,290,right now,speechiness,0.0859181818181818
+289,289,march to aug '20,speechiness,0.0829428571428571
+296,296,summer2019,speechiness,0.0812
+294,294,spring break,speechiness,0.079724
+278,278,currents,speechiness,0.07958
+291,291,road to atl,speechiness,0.076434
+260,260,Angola 70's,speechiness,0.0708439999999999
+264,264,Current Plane Playlist,speechiness,0.0671416666666666
+281,281,doin' the naughty,speechiness,0.06335
+300,300,when you realize you’re both in love,speechiness,0.0629
+287,287,jan '20,speechiness,0.062
+286,286,for dancing,speechiness,0.0607846153846153
+282,282,"dont worry, you're doing just fine",speechiness,0.053175
+276,276,a love letter to little me,speechiness,0.0505374999999999
+292,292,sing me to sleep,speechiness,0.0503333333333333
+277,277,coming of age online,speechiness,0.050232
+259,259,ATL w/Melissa,speechiness,0.0494166666666666
+274,274,You are safe,speechiness,0.0463666666666666
+275,275,Your Top Songs 2017,speechiness,0.04591
+273,273,Worship,speechiness,0.045144
+261,261,Apt. 435,speechiness,0.0446375
+285,285,florence,speechiness,0.0438866666666666
+266,266,Lina's spanish songs,speechiness,0.0432358974358974
+283,283,fearless,speechiness,0.0395304347826086
+263,263,"Christmas Collection, Vol. 1",speechiness,0.0393923076923076
+270,270,Re-education: Bob Dylan,speechiness,0.0388210526315789
+297,297,that new new country,speechiness,0.0383333333333333
+262,262,Atlas: II,speechiness,0.037535
+271,271,Roo Panes,speechiness,0.0363166666666666
+295,295,summer2018,speechiness,0.0363125
+269,269,PRAISE,speechiness,0.035316
+293,293,sleeping at last,speechiness,0.0352294117647058
+258,258,4/12/2019,speechiness,0.0348666666666666
+298,298,"through the deep, dark valley",speechiness,0.0346666666666666
+299,299,wedding playlist 2,speechiness,0.03376
+265,265,Introducing:,speechiness,0.0319333333333333
+233,233,a love letter to little me,loudness,1.0000000000000002
+243,243,for dancing,loudness,0.9517483312861548
+247,247,right now,loudness,0.8827654540329539
+245,245,lil's recs,loudness,0.8665259879945096
+254,254,that new new country,loudness,0.8431855108346206
+240,240,fearless,loudness,0.8252211195420505
+236,236,dance,loudness,0.8110277573102164
+216,216,ATL w/Melissa,loudness,0.7982447898379795
+229,229,To listen to 8/2,loudness,0.7863214050033162
+225,225,Música do antigamente,loudness,0.7785299950053657
+253,253,summer2019,loudness,0.7587672468864457
+244,244,jan '20,loudness,0.7543885124306159
+224,224,Litty,loudness,0.7356781781271678
+223,223,Lina's spanish songs,loudness,0.7304019558577782
+239,239,"dont worry, you're doing just fine",loudness,0.7229214161025039
+230,230,Worship,loudness,0.6897481418476193
+232,232,Your Top Songs 2017,loudness,0.6847000993981714
+248,248,road to atl,loudness,0.673854324809487
+241,241,feb '20,loudness,0.6693341806079609
+221,221,Current Plane Playlist,loudness,0.6549746064870907
+238,238,doin' the naughty,loudness,0.6416720651577268
+217,217,Angola 70's,loudness,0.6394239851248908
+251,251,spring break,loudness,0.628202376654782
+256,256,wedding playlist 2,loudness,0.6228754259038559
+234,234,coming of age online,loudness,0.6067481962446285
+235,235,currents,loudness,0.523951992166831
+246,246,march to aug '20,loudness,0.5237259266742447
+257,257,when you realize you’re both in love,loudness,0.5156440853142912
+215,215,4/12/2019,loudness,0.4178489774186478
+219,219,Atlas: II,loudness,0.3704436323355604
+255,255,"through the deep, dark valley",loudness,0.3329360703270909
+252,252,summer2018,loudness,0.3139053590944385
+220,220,"Christmas Collection, Vol. 1",loudness,0.3050553841436905
+218,218,Apt. 435,loudness,0.2210224659647806
+222,222,Introducing:,loudness,0.2110208340545059
+227,227,Re-education: Bob Dylan,loudness,0.2085950918281378
+237,237,disney!!!!!!!!!!!!!,loudness,0.2083148301082502
+226,226,PRAISE,loudness,0.2018069697404274
+231,231,You are safe,loudness,0.1612393287079394
+250,250,sleeping at last,loudness,0.0539152901847723
+249,249,sing me to sleep,loudness,0.0353020105464263
+228,228,Roo Panes,loudness,0.0173345135835927
+242,242,florence,loudness,0.0
+187,187,Worship,liveness,0.373216
+188,188,You are safe,liveness,0.3153666666666666
+189,189,Your Top Songs 2017,liveness,0.309698
+200,200,for dancing,liveness,0.2456230769230769
+214,214,when you realize you’re both in love,liveness,0.24205
+195,195,doin' the naughty,liveness,0.23475
+206,206,sing me to sleep,liveness,0.2290666666666666
+213,213,wedding playlist 2,liveness,0.2281
+201,201,jan '20,liveness,0.2197454545454545
+212,212,"through the deep, dark valley",liveness,0.2055222222222222
+193,193,dance,liveness,0.197374
+190,190,a love letter to little me,liveness,0.1949666666666666
+194,194,disney!!!!!!!!!!!!!,liveness,0.1939099999999999
+198,198,feb '20,liveness,0.18996875
+205,205,road to atl,liveness,0.1863939999999999
+210,210,summer2019,liveness,0.1847727272727272
+209,209,summer2018,liveness,0.18195
+204,204,right now,liveness,0.1818090909090909
+180,180,Lina's spanish songs,liveness,0.1794641025641025
+183,183,PRAISE,liveness,0.173814
+174,174,Angola 70's,liveness,0.173778
+181,181,Litty,liveness,0.1717878048780488
+178,178,Current Plane Playlist,liveness,0.1687625
+172,172,4/12/2019,liveness,0.1647583333333333
+202,202,lil's recs,liveness,0.1558428571428571
+191,191,coming of age online,liveness,0.155418
+186,186,To listen to 8/2,liveness,0.1529166666666666
+184,184,Re-education: Bob Dylan,liveness,0.1508842105263158
+196,196,"dont worry, you're doing just fine",liveness,0.149225
+192,192,currents,liveness,0.14912
+173,173,ATL w/Melissa,liveness,0.14795
+197,197,fearless,liveness,0.1469130434782608
+208,208,spring break,liveness,0.14659
+179,179,Introducing:,liveness,0.1416666666666667
+176,176,Atlas: II,liveness,0.137005
+175,175,Apt. 435,liveness,0.1318875
+211,211,that new new country,liveness,0.1258277777777777
+177,177,"Christmas Collection, Vol. 1",liveness,0.1158076923076923
+185,185,Roo Panes,liveness,0.11475
+199,199,florence,liveness,0.1112133333333333
+182,182,Música do antigamente,liveness,0.099
+207,207,sleeping at last,liveness,0.0947470588235294
+203,203,march to aug '20,liveness,0.0874714285714285
+156,156,florence,instrumentalness,0.7919466666666667
+164,164,sleeping at last,instrumentalness,0.6544529411764706
+136,136,Introducing:,instrumentalness,0.3245666666666666
+152,152,doin' the naughty,instrumentalness,0.2067641
+163,163,sing me to sleep,instrumentalness,0.18333369
+169,169,"through the deep, dark valley",instrumentalness,0.1539119555555555
+133,133,Atlas: II,instrumentalness,0.1056533764999999
+148,148,coming of age online,instrumentalness,0.0881287073999999
+149,149,currents,instrumentalness,0.073225576
+139,139,Música do antigamente,instrumentalness,0.0715241
+165,165,spring break,instrumentalness,0.0435837874
+129,129,4/12/2019,instrumentalness,0.0404318683333333
+140,140,PRAISE,instrumentalness,0.0318172138
+166,166,summer2018,instrumentalness,0.02876264625
+145,145,You are safe,instrumentalness,0.0267141999999999
+135,135,Current Plane Playlist,instrumentalness,0.0266235804166666
+131,131,Angola 70's,instrumentalness,0.0242369718
+142,142,Roo Panes,instrumentalness,0.0237786833333333
+170,170,wedding playlist 2,instrumentalness,0.0164534
+134,134,"Christmas Collection, Vol. 1",instrumentalness,0.0150704661538461
+162,162,road to atl,instrumentalness,0.0078976912
+171,171,when you realize you’re both in love,instrumentalness,0.007870295
+138,138,Litty,instrumentalness,0.0038741087804878
+137,137,Lina's spanish songs,instrumentalness,0.0034095994871794
+158,158,jan '20,instrumentalness,0.0031070836363636
+146,146,Your Top Songs 2017,instrumentalness,0.0028666222
+144,144,Worship,instrumentalness,0.0025674482
+155,155,feb '20,instrumentalness,0.00176937375
+150,150,dance,instrumentalness,0.001538915
+157,157,for dancing,instrumentalness,0.0015305369230769
+132,132,Apt. 435,instrumentalness,0.001496175
+143,143,To listen to 8/2,instrumentalness,0.0013456816666666
+141,141,Re-education: Bob Dylan,instrumentalness,0.0010533421052631
+153,153,"dont worry, you're doing just fine",instrumentalness,0.001018675
+130,130,ATL w/Melissa,instrumentalness,0.0004664
+151,151,disney!!!!!!!!!!!!!,instrumentalness,0.0004384016
+147,147,a love letter to little me,instrumentalness,0.0004260820833333
+167,167,summer2019,instrumentalness,0.0002263581818181
+160,160,march to aug '20,instrumentalness,0.0001739899999999
+159,159,lil's recs,instrumentalness,3.715714285714285e-05
+161,161,right now,instrumentalness,3.707909090909091e-05
+168,168,that new new country,instrumentalness,2.9103333333333333e-05
+154,154,fearless,instrumentalness,5.217391304347826e-07
+114,114,for dancing,energy,0.7944102564102564
+104,104,a love letter to little me,energy,0.7772083333333333
+127,127,wedding playlist 2,energy,0.764
+96,96,Música do antigamente,energy,0.7145
+107,107,dance,energy,0.6709999999999999
+88,88,Angola 70's,energy,0.66557
+111,111,fearless,energy,0.6376086956521739
+110,110,"dont worry, you're doing just fine",energy,0.633
+118,118,right now,energy,0.6281818181818182
+115,115,jan '20,energy,0.6192727272727273
+94,94,Lina's spanish songs,energy,0.6191794871794871
+125,125,that new new country,energy,0.5846666666666667
+95,95,Litty,energy,0.583780487804878
+122,122,spring break,energy,0.57658
+116,116,lil's recs,energy,0.5602857142857143
+92,92,Current Plane Playlist,energy,0.5581666666666667
+109,109,doin' the naughty,energy,0.54925
+124,124,summer2019,energy,0.5402727272727272
+105,105,coming of age online,energy,0.535454
+100,100,To listen to 8/2,energy,0.5349444444444444
+119,119,road to atl,energy,0.5318
+101,101,Worship,energy,0.5273
+103,103,Your Top Songs 2017,energy,0.5263
+87,87,ATL w/Melissa,energy,0.5143333333333333
+112,112,feb '20,energy,0.4836875
+106,106,currents,energy,0.4708
+102,102,You are safe,energy,0.4573333333333333
+117,117,march to aug '20,energy,0.4531714285714286
+128,128,when you realize you’re both in love,energy,0.4425
+126,126,"through the deep, dark valley",energy,0.3940555555555555
+108,108,disney!!!!!!!!!!!!!,energy,0.384662
+123,123,summer2018,energy,0.3744125
+86,86,4/12/2019,energy,0.356975
+98,98,Re-education: Bob Dylan,energy,0.3468052631578947
+89,89,Apt. 435,energy,0.343075
+121,121,sleeping at last,energy,0.3332941176470588
+90,90,Atlas: II,energy,0.32985
+99,99,Roo Panes,energy,0.3187833333333333
+97,97,PRAISE,energy,0.303914
+120,120,sing me to sleep,energy,0.2303333333333333
+113,113,florence,energy,0.2084733333333333
+91,91,"Christmas Collection, Vol. 1",energy,0.2072307692307692
+93,93,Introducing:,energy,0.1823333333333333
+52,52,Litty,danceability,0.7498048780487805
+64,64,dance,danceability,0.70392
+81,81,summer2019,danceability,0.6808181818181818
+51,51,Lina's spanish songs,danceability,0.6738717948717948
+45,45,Angola 70's,danceability,0.6411199999999999
+75,75,right now,danceability,0.628
+53,53,Música do antigamente,danceability,0.619
+61,61,a love letter to little me,danceability,0.61
+79,79,spring break,danceability,0.59772
+72,72,jan '20,danceability,0.5926363636363636
+49,49,Current Plane Playlist,danceability,0.5830416666666667
+63,63,currents,danceability,0.5738000000000001
+76,76,road to atl,danceability,0.56806
+69,69,feb '20,danceability,0.5578125
+57,57,To listen to 8/2,danceability,0.5553333333333333
+82,82,that new new country,danceability,0.5507777777777778
+68,68,fearless,danceability,0.548304347826087
+67,67,"dont worry, you're doing just fine",danceability,0.541
+71,71,for dancing,danceability,0.5385897435897435
+44,44,ATL w/Melissa,danceability,0.535
+84,84,wedding playlist 2,danceability,0.5252
+74,74,march to aug '20,danceability,0.5237142857142857
+73,73,lil's recs,danceability,0.5232857142857142
+62,62,coming of age online,danceability,0.5230020000000001
+55,55,Re-education: Bob Dylan,danceability,0.5218421052631579
+59,59,You are safe,danceability,0.5066666666666667
+66,66,doin' the naughty,danceability,0.50325
+65,65,disney!!!!!!!!!!!!!,danceability,0.49042
+50,50,Introducing:,danceability,0.4873333333333334
+46,46,Apt. 435,danceability,0.486
+70,70,florence,danceability,0.478
+80,80,summer2018,danceability,0.466875
+43,43,4/12/2019,danceability,0.4614166666666666
+83,83,"through the deep, dark valley",danceability,0.4441111111111111
+54,54,PRAISE,danceability,0.44248
+60,60,Your Top Songs 2017,danceability,0.43
+77,77,sing me to sleep,danceability,0.421
+58,58,Worship,danceability,0.40976
+48,48,"Christmas Collection, Vol. 1",danceability,0.4093846153846154
+85,85,when you realize you’re both in love,danceability,0.3747499999999999
+56,56,Roo Panes,danceability,0.3623333333333333
+47,47,Atlas: II,danceability,0.3543
+78,78,sleeping at last,danceability,0.3256294117647059
+7,7,Introducing:,acousticness,0.9153333333333332
+5,5,"Christmas Collection, Vol. 1",acousticness,0.888
+16,16,You are safe,acousticness,0.8763333333333333
+27,27,florence,acousticness,0.8752666666666666
+34,34,sing me to sleep,acousticness,0.868
+4,4,Atlas: II,acousticness,0.8371999999999999
+12,12,Re-education: Bob Dylan,acousticness,0.7702105263157895
+10,10,Música do antigamente,acousticness,0.6695
+20,20,currents,acousticness,0.655644
+35,35,sleeping at last,acousticness,0.6408823529411765
+42,42,when you realize you’re both in love,acousticness,0.636775
+37,37,summer2018,acousticness,0.63575
+22,22,disney!!!!!!!!!!!!!,acousticness,0.630014
+3,3,Apt. 435,acousticness,0.62475
+13,13,Roo Panes,acousticness,0.6146666666666666
+0,0,4/12/2019,acousticness,0.5689958333333334
+31,31,march to aug '20,acousticness,0.538602857142857
+11,11,PRAISE,acousticness,0.53658804
+33,33,road to atl,acousticness,0.4964672
+2,2,Angola 70's,acousticness,0.471388
+19,19,coming of age online,acousticness,0.42478778
+30,30,lil's recs,acousticness,0.4063285714285714
+26,26,feb '20,acousticness,0.40062625
+6,6,Current Plane Playlist,acousticness,0.4000758333333333
+29,29,jan '20,acousticness,0.3719181818181818
+14,14,To listen to 8/2,acousticness,0.3683944444444444
+8,8,Lina's spanish songs,acousticness,0.3673376923076923
+36,36,spring break,acousticness,0.3585228
+1,1,ATL w/Melissa,acousticness,0.3446166666666666
+32,32,right now,acousticness,0.3419090909090909
+40,40,"through the deep, dark valley",acousticness,0.3163411111111111
+38,38,summer2019,acousticness,0.3099636363636363
+39,39,that new new country,acousticness,0.3095888888888888
+17,17,Your Top Songs 2017,acousticness,0.2665608
+25,25,fearless,acousticness,0.2529300434782608
+21,21,dance,acousticness,0.2397326
+15,15,Worship,acousticness,0.2373266
+23,23,doin' the naughty,acousticness,0.2124875
+9,9,Litty,acousticness,0.1508841951219512
+18,18,a love letter to little me,acousticness,0.1103789625
+24,24,"dont worry, you're doing just fine",acousticness,0.09787375
+41,41,wedding playlist 2,acousticness,0.06403
+28,28,for dancing,acousticness,0.0619683897435897

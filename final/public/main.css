@@ -1,0 +1,44 @@
+* {
+    font-family: 'Work Sans',Arial, Helvetica, sans-serif;
+  }
+  body {
+    background-color: #ffffff;
+    }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background: #ffffff;
+  }
+
+  #container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  #chart {
+    width: 100%;
+  }
+
+  .svg-tooltip {
+    background: rgba(69, 77, 93, .9);
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: none;
+    max-width: 320px;
+    padding: 1rem;
+    position: absolute;
+    text-overflow: ellipsis;
+    white-space: pre;
+    z-index: 300;
+    visibility: hidden;
+  }
+
+
+  foreignObject p {
+    font-size: 10px;
+  }
