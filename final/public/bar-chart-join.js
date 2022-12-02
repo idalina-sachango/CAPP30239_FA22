@@ -1,17 +1,19 @@
 Promise.all([
-  d3.csv('../data/master_song_features_sorted.csv')
+  d3.csv('../data/master_song_features_v2.csv')
 ]).then(([data]) => {
 
   for (let d of data) {
     d.value = +d.value; 
   };
+  data.sort((a, b) => {return d3.descending(a.value, b.value)});
   
   const height = 320,
         width = 600
         margin = ({ top: 25, right: 200, bottom: 35, left: 100 });
 
-  const colors = d3.schemeGreens[6][0];
-  console.log(colors)
+  // const colors = d3.schemeSpectral[10][0];
+  // console.log(colors)
+  const colors = d3.quantize(d3.interpolateGreens, 10)[5]
 
   const svg = d3.select("#chart2")
       .append("svg")
@@ -19,8 +21,8 @@ Promise.all([
 
   let y = d3.scaleBand()
       .domain(data.map(d => d.playlist_name)) 
-      .range([margin.top, height - margin.bottom]);
-      // .padding(0.1);
+      .range([margin.top, height - margin.bottom])
+      .padding(0.1);
 
   let x = d3.scaleLinear()
       .domain([0, d3.max(data, d => d.value)]).nice()
@@ -75,7 +77,7 @@ Promise.all([
                 let g = enter.append("g")
               
                 g.append("rect")
-                  .attr("fill", '#191414')
+                  .attr("fill", colors)
                   .attr("x", margin.left)
                   .attr("width", d => x(d.value))
                   .attr("y", d => y(d.playlist_name))

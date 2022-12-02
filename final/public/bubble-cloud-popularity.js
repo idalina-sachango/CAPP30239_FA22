@@ -1,15 +1,23 @@
 Promise.all([
-    d3.csv('../data/playlist_avg_popularity_v2.csv')
+    d3.csv('../data/playlist_avg_popularity_final.csv')
 ]).then(([data]) => {
     for (let d of data) {
         d.artist_popularity = +d.artist_popularity
     }
+    const tooltip = d3.select("body")
+        .append("div")
+        .attr("class", "svg-tooltip")
+        .style("position", "absolute")
+        .style("visibility", "hidden");
+
     const height = 710,
     width = 400;
+    data.sort((a, b) => {return d3.descending(a.artist_popularity, b.artist_popularity)});
+    console.log(data)
 
     const Array = data.map(d => d.artist_popularity);
 
-    var colors = d3.schemeGreens[data.length];
+    // var colors = d3.schemeGreens[data.length];
         
     var colors = d3.quantize(d3.interpolateGreens, data.length);
 
@@ -23,7 +31,7 @@ Promise.all([
 
     var labels = svg.append('text');
 
-    var radiusScale = d3.scaleSqrt().domain([17, 73]).range([2, 25])
+    var radiusScale = d3.scaleLinear().domain(d3.extent(data, d => d.artist_popularity)).range([5, 35])
 
     var simulation = d3.forceSimulation()
         .force('x', d3.forceX(width / 2).strength(0.05))
@@ -37,9 +45,25 @@ Promise.all([
         .enter().append('circle')
         .attr('class', 'popularity')
         .attr('r', function(d) {
-            return radiusScale(d.artist_popularity)
+            return 0.95 * radiusScale(d.artist_popularity)
         })
-        .attr('fill', d => set_color(d.artist_popularity));
+        .attr('fill', d => set_color(radiusScale(d.artist_popularity)))
+        .on("mousemove", function (event, d) {
+            let pop = d.artist_popularity;
+            let p_name = d.playlist_name;
+      
+            tooltip
+              .style("visibility", "visible")
+              .html(`playlist name: ${p_name}
+                    <br>average popularity of artists: ${pop}`)
+              .style("top", (event.pageY - 10) + "px")
+              .style("left", (event.pageX + 10) + "px");
+            d3.select(this).attr("fill", "goldenrod");
+          })
+          .on("mouseout", function () {
+            tooltip.style("visibility", "hidden");
+            d3.select(this).attr("fill", d => set_color(radiusScale(d.artist_popularity)));
+          });
     
     var labels = svg.selectAll('.bubble-text-pop')
         .data(data)
@@ -49,7 +73,7 @@ Promise.all([
             return d.playlist_name
         })
         .attr('font-size', function(d) {
-            return 0.30 * radiusScale(d.artist_popularity)
+            return 0.25 * radiusScale(d.artist_popularity)
         })
         .attr('text-anchor', 'middle');        
 

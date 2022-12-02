@@ -1,6 +1,11 @@
 Promise.all([
     d3.csv('../data/master_gen_info.csv')
 ]).then(([data]) => {
+  const tooltip = d3.select("body")
+    .append("div")
+    .attr("class", "svg-tooltip")
+    .style("position", "absolute")
+    .style("visibility", "hidden");
 // Copyright 2021 Observable, Inc.
 // Released under the ISC license.
 // https://observablehq.com/@d3/dot-plot
@@ -32,11 +37,18 @@ Promise.all([
         duration: initialDuration = 250, // duration of transition, if any
         delay: initialDelay = (_, i) => i * 10, // delay of transition, if any
       } = {}) {
+        data.sort((a, b) => {return d3.descending(a.release_date, b.release_date)});
         // Compute values.
         const X = d3.map(data, x);
-
         const Y = d3.map(data, y);
         const Z = d3.map(data, z);
+        
+
+        const track = d3.map(data, d => d.track_name);
+        const artist = d3.map(data, d => d.artist_name);
+        const album = d3.map(data, d => d.album_name);
+        const release = d3.map(data, d => d.release_date);
+        const track_pop = d3.map(data, d => d.popularity);
     
         // Compute default domains, and unique them as needed.
         if (xDomain === undefined) xDomain = d3.extent(X);
@@ -45,6 +57,8 @@ Promise.all([
         if (zDomain === undefined) zDomain = Z;
         yDomain = new d3.InternSet(yDomain);
         zDomain = new d3.InternSet(zDomain);
+        console.log(zDomain)
+        
 
         // Omit any data not present in the y- and z-domains.
         const I = d3.range(X.length).filter(i => yDomain.has(Y[i]) && zDomain.has(Z[i]));
@@ -54,9 +68,9 @@ Promise.all([
         if (yRange === undefined) yRange = [marginTop, height - marginBottom];
     
         // Chose a default color scheme based on cardinality.
-        if (colors === undefined) colors = d3.schemeSpectral[zDomain.size];
+        // if (colors === undefined) colors = d3.schemeViridis[zDomain.size];
         
-        if (colors === undefined) colors = d3.quantize(d3.interpolateSpectral, zDomain.size);
+        if (colors === undefined) colors = d3.quantize(d3.interpolateViridis, zDomain.size);
     
         // Construct scales and axes.
         const xScale = xType(xDomain, xRange);
@@ -108,7 +122,23 @@ Promise.all([
           .join("circle")
             .attr("cx", i => xScale(X[i]))
             .attr("fill", i => color(Z[i]))
-            .attr("r", r);
+            .attr("r", r)
+            .on("mousemove", function (event, i) {
+              tooltip
+                .style("visibility", "visible")
+                .html(`Song name: ${track[i]}
+                      <br>Artist: ${artist[i]}
+                      <br>Album: ${album[i]}
+                      <br>Release Year: ${release[i]}
+                      <br>Track Popularity: ${track_pop[i]}`)
+                .style("top", (event.pageY - 10) + "px")
+                .style("left", (event.pageX + 10) + "px");
+              d3.select(this).attr("fill", "goldenrod");
+            })
+            .on("mouseout", function (i) {
+              tooltip.style("visibility", "hidden");
+              d3.select(this).attr("fill", color(Z[i]));
+            });
     
         g.append("text")
             .attr("dy", "0.35em")

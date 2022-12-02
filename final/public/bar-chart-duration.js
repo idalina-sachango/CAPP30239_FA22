@@ -1,8 +1,9 @@
 Promise.all([
-    d3.csv('../data/playlist_avg_duration.csv')
+    d3.csv('../data/playlist_avg_duration_final.csv')
 ]).then(([data]) => {
-    const height = 320,
-          width = 600;
+    const height = 300,
+        width = 620
+        margin = ({ top: 25, right: 200, bottom: 35, left: 100 });
 
     let svg = d3.select("#chart5")
         .append("svg")
@@ -12,8 +13,8 @@ Promise.all([
 
     var format = d3.format(",.2f");
 
-    const colors = d3.schemeSpectral[data.length][2];
-    console.log(colors)
+    // const colors = d3.schemeSpectral[10][0];
+    const colors = d3.quantize(d3.interpolateGreens, 10)[5]
 
 
     for (let d of data) {
@@ -53,7 +54,7 @@ Promise.all([
         .attr("class", "bar");
 
     bar.append("rect") // add rect to bar group
-        .attr("fill", '#191414')
+        .attr("fill", colors)
         .attr("x", d => x(d.playlist_name)) // x position attribute
         .attr("width", x.bandwidth()) // this width is the width attr on the element
         .attr("y", d => y(d.duration_min)) // y position attribute

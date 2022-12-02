@@ -3,7 +3,10 @@
   }
   body {
     background-color: #ffffff;
+    /* margin: 0; */
+    min-width: 1700px;
     }
+
   .center {
     display: flex;
     justify-content: center;
@@ -12,22 +15,9 @@
     background: #ffffff;
   }
 
-  #container {
-    max-width: 1500px;
+  .container {
+    max-width: none;
     margin: 0 auto;
-  }
-
-  #chart {
-    width: 100%;
-  }
-
-  #year {
-    font-size: 80px;
-    justify-content: center;
-    align-items: center;
-  }
-  #description {
-    font-size: 10px;
   }
 
   .svg-tooltip {
@@ -46,21 +36,31 @@
     z-index: 300;
     visibility: hidden;
   }
-
-  img {
-    height: 100px;
-    width:100px
-  }
-
-  .column {
-    /* float: left; */
-    width: 12.5%;
-    padding: 10px;
-    font-size: 14px;
-    /* display: flex; */
+  .row {
+    min-width: 2000;
+    margin: 0 auto;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
+  .column {
+    /* float: right; */
+    width: 60%;
+    padding: 10px;
+    font-size: 9.5px;
+  }
+  select {
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  #filter-feat {
+    width: 150px;
+    height: 27px;
+    font-size: 15px;
+  }
+
 
   foreignObject p {
     font-size: 10px;
