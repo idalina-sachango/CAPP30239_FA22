@@ -60,8 +60,6 @@
 
   .column {
     float: right;
-    display: flex;
-    flex-wrap: wrap;
     width: 11%;
     padding: 20px;
     font-size: 12px;
