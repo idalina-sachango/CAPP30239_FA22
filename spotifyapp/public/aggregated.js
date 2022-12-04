@@ -20,13 +20,24 @@ Promise.all([
         d3.selectAll("svg").remove();
         d3.selectAll("#filter-feat").remove();
         if (m == 'genre') {
+            d3.select("#title")
+                .text("Count of Common Genres Across all Playlists")
+                .attr('font-size', '100');
             bubble_genre(genre)
         } else if (m == 'features') {
+            d3.select("#title")
+                .text("Song Features Across Playlists Ranked Descending")
+                .attr('font-size', '100');
             hor_feat(features)
         } else if (m == 'duration') {
+            d3.select("#title")
+                .text("Average Song Duration Across Playlists")
+                .attr('font-size', '100');
             vert_dur(duration)
         } else if (m == 'timeline') {
-            console.log(timeline)
+            d3.select("#title")
+                .text("Playlist Musical Eras")
+                .attr('font-size', '100');
             ti(timeline)
         }
 
