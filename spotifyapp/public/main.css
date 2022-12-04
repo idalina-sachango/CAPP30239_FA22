@@ -13,8 +13,9 @@
   }
 
   #container {
-    max-width: 1000px;
-    margin: 0 auto;
+    min-width: 100%;
+    min-height: 100%;
+    margin: auto;
   }
 
   #chart {
@@ -51,12 +52,17 @@
     height: 100px;
     width:100px
   }
+  .row {
+    width: 90%;
+    margin: auto;
+    
+  }
 
   .column {
-    float: left;
-    width: 12.5%;
-    padding: 10px;
-    font-size: 14px;
+    float: right;
+    width: 11%;
+    padding: 20px;
+    font-size: 12px;
   }
 
   #container-p {
