@@ -1,10 +1,9 @@
 Promise.all([
     d3.csv('../data/dates_edited_final.csv'),
     d3.csv('../data/playlist_descriptions_final.csv'),
-    d3.csv('../data/features_and_means.csv'),
-    d3.csv('../master_gen_info_test.csv'),
+    d3.csv('../data/features_w_track_info.csv'),
     d3.csv('../data/most_pop_genre_final.csv')
-]).then(([data, desc, feat, s, genre]) => {
+]).then(([data, desc, s, genre]) => {
     const width = 640,
         height = 640;
 
@@ -40,6 +39,7 @@ Promise.all([
     // Released under the ISC license.
     // https://observablehq.com/@d3/beeswarm
     function updateChart(m) {
+
         d3.selectAll("svg").remove();
 
         let filtered = data.filter(d => d.playlist_name == m);
@@ -100,7 +100,7 @@ Promise.all([
 
       var labels = svg.append('text');
 
-      var radiusScale = d3.scaleSqrt().domain(d3.extent(data, d => d.count)).range([15, 50]);
+      var radiusScale = d3.scaleSqrt().domain(d3.extent(data, d => d.count)).range([10, 35]);
 
       const Array = data.map(d => d.count);
 
@@ -141,7 +141,7 @@ Promise.all([
             })
             .on("mouseout", function () {
               tooltip.style("visibility", "hidden");
-              d3.select(this).attr("fill", 'steelblue');
+              d3.select(this).attr("fill", d => set_color(radiusScale(d.count)));
             });
           
       var labels = svg.selectAll('.bubble-text')
@@ -184,6 +184,11 @@ Promise.all([
       let height = 400,
           width = 600,
           margin = ({ top: 25, right: 30, bottom: 35, left: 40 });
+      const tooltip = d3.select("body")
+          .append("div")
+          .attr("class", "svg-tooltip")
+          .style("position", "absolute")
+          .style("visibility", "hidden");
       // Selecting the ID of chart in the html page and appending an SVG to it. Adding a viewbox.
       console.log(data)
       const svg = d3.select("#chart2")
@@ -226,7 +231,23 @@ Promise.all([
         .attr("cy", d => y(d.energy))
         // r = radius of dots will be 2
         .attr("r", 5)
-        .attr("opacity", 0.75);
+        .attr("opacity", 0.75)
+        .on("mousemove", function (event, d) {
+          let song = d.track_name;
+          let artist = d.artist_name;
+      
+          tooltip
+            .style("visibility", "visible")
+            .html(`Song Name: ${song}
+                  <br>Artist Name: ${artist}`)
+            .style("top", (event.pageY - 10) + "px")
+            .style("left", (event.pageX + 10) + "px");
+          d3.select(this).attr("fill", "goldenrod");
+        })
+        .on("mouseout", function () {
+          tooltip.style("visibility", "hidden");
+          d3.select(this).attr("fill", "#003333");
+        });
 
       svg.append('text')
         .attr('x', 70)
@@ -266,6 +287,20 @@ Promise.all([
         .style("stroke-width", 2)
         .style("stroke", "black")
         .style("fill", "none");
+
+      svg.append("text")
+        .attr("class", "x label")
+        .attr("text-anchor", "end")
+        .attr("x", width)
+        .attr("y", height - 3)
+        .text("Valence");
+      svg.append("text")
+        .attr("class", "y label")
+        .attr("text-anchor", "end")
+        .attr("y", 6)
+        .attr("dy", ".75em")
+        .attr("transform", "rotate(-90)")
+        .text("Energy");
         
       return svg.node()
     }

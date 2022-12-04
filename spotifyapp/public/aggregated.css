@@ -3,7 +3,12 @@
   }
   body {
     background-color: #ffffff;
+    margin: 0;
+    /* min-width: 1000px; */
+    min-height: 1000px;
+    min-width: 100%;
     }
+
   .center {
     display: flex;
     justify-content: center;
@@ -12,28 +17,10 @@
     background: #ffffff;
   }
 
-  #container {
-    min-width: 5000px;
-    margin: 0 auto;
-  }
-
-  #chart {
-    width: 100%;
-  }
-
-  #year {
-    font-size: 80px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #description {
-    font-size: 17px;
-    font-weight: bold;
-    font-style: italic;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .container {
+    min-width: 100%;
+    min-height: 100%;
+    margin: auto;
   }
 
   .svg-tooltip {
@@ -52,17 +39,26 @@
     z-index: 300;
     visibility: hidden;
   }
-
-  img {
-    height: 100px;
-    width:100px
+  .row {
+    width: 70%;
+    margin: auto;
+    
   }
 
-  .column {
-    /* float: left; */
-    width: 50%;
-    padding: 10px;
+  select {
+    width: 100px;
+    height: 30px;
     font-size: 15px;
+  }
+
+  #filter-feat {
+    width: 150px;
+    height: 27px;
+    font-size: 15px;
+  }
+  #chart {
+    min-width: 100%;
+    float: left;
   }
 
   foreignObject p {

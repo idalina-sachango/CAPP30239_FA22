@@ -2,9 +2,8 @@ Promise.all([
     d3.csv('../data/most_pop_genre_final_agg.csv'),
     d3.csv('../data/playlist_avg_duration_final.csv'),
     d3.csv('../data/master_song_features_v2.csv'),
-    d3.csv('../data/playlist_avg_popularity_final.csv'),
-    d3.csv('../gen_info.csv')
-]).then(([genre, duration, features, popularity, timeline]) => {
+    d3.csv('../data/timeline_info.csv')
+]).then(([genre, duration, features, timeline]) => {
 
     allGroup = ['genre', 'duration', 'timeline', 'features']
 
@@ -27,16 +26,9 @@ Promise.all([
         } else if (m == 'duration') {
             vert_dur(duration)
         } else if (m == 'timeline') {
+            console.log(timeline)
             ti(timeline)
         }
-
-        
-        // let dur = duration.filter(d => d.playlist_name == m);
-        // let feat = features.filter(d => d.playlist_name == m);
-        // let pop = popularity.filter(d => d.playlist_name == m);
-        // let tim = timeline.filter(d => d.playlist_name == m);
-
-
 
 
     }
@@ -164,7 +156,7 @@ Promise.all([
         
           const svg = d3.select("#chart")
               .append("svg")
-              .attr("viewBox", [0, 0, width, height]);
+              .attr("viewBox", [-95, 0, width + 200, height]);
         
           let y = d3.scaleBand()
               .domain(data.map(d => d.playlist_name)) 
@@ -189,7 +181,7 @@ Promise.all([
                 // .style("text-anchor", "end")
                 .attr("dx", "-0.5em")
                 .attr("dy", "0.10em")
-                .attr("font-size","12");
+                .attr("font-size","20");
         
           allGroup = ['acousticness', 'danceability', 'energy', 'instrumentalness', 
           'liveness', 'loudness', 'speechiness', 'valence']
@@ -287,7 +279,7 @@ Promise.all([
 
         let svg = d3.select("#chart")
             .append("svg")
-            .attr("viewBox", [0, 0, width - 98, height + 155]); // for resizing element in browser
+            .attr("viewBox", [0, 0, width - 98, height + 300]); // for resizing element in browser
 
         data.sort((a, b) => {return d3.descending(a.duration_min, b.duration_min)});
 
@@ -318,14 +310,27 @@ Promise.all([
             .call(d3.axisBottom(x))
             .selectAll("text")  
             .style("text-anchor", "end")
-            .attr('font-size', 12)
+            .attr('font-size', 20)
             .attr("dx", "-.8em")
             .attr("dy", ".15em")
             .attr("transform", "rotate(-65)");
 
         svg.append("g")
             .attr("transform", `translate(${margin.left - 5},0)`)
-            .call(d3.axisLeft(y));
+            .call(d3.axisLeft(y))
+            .selectAll("text")  
+            .style("text-anchor", "end")
+            .attr('font-size', 20)
+            .attr("dx", "-.8em")
+            .attr("dy", ".15em")
+
+        svg.append("text")
+            .attr("class", "y label")
+            .attr("text-anchor", "end")
+            .attr("y", 6)
+            .attr("dy", ".75em")
+            .attr("transform", "rotate(-90)")
+            .text("Average Song Duration (min)");
 
 
         let bar = svg.selectAll(".bar") // create bar groups
@@ -371,8 +376,8 @@ Promise.all([
             marginRight = 60, // right margin, in pixels
             marginBottom = 10, // bottom margin, in pixels
             marginLeft = 100, // left margin, in pixels
-            width = 1200, // outer width, in pixels
-            height = 840, // outer height, in pixels, defaults to heuristic
+            width = 840, // outer width, in pixels
+            height = 640, // outer height, in pixels, defaults to heuristic
             xType = d3.scaleLinear, // type of x-scale
             xDomain, // [xmin, xmax]
             xRange = [marginLeft, width - marginRight], // [left, right]
